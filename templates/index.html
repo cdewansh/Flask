@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>
+        First Web Page
+    </title>
+</head>
+ 
+<body>
+<h1>Todos</h1>
+<!-- jinja2 template. Not pure html. HTML does not support loops -->
+<ul>
+    {% for todo in todos%}
+    <li>{{ todo['todo'] }}</li>
+    {% endfor %}
+</ul>
+</body>
+ 
+</html>
